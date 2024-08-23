@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Style web design</title>
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <!-- Header section -->
+    <section id="banner">
+        <img class="logo" src="./logo.png" alt="logo">
+        <div class="banner-text">
+            <h1>Hair Studio</h1>
+            <p>Style Your hair Is Style Your Life</p>
+        </div>
+        <div class="banner_btn">
+            <a href="#"><span></span>Find Out</a>
+            <a href="#"><span></span>Read More</a>
+        </div>
+    </section>
+
+
+    <section id="side_nav">
+        <nav>
+            <ul>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#feature">FEATURES</a></li>
+                <li><a href="#service">SERVICES</a></li>
+                <li><a href="#testimonial">TESTIMONIALS</a></li>
+                <li><a href="#footer">MEET US</a></li>
+            </ul>
+        </nav>
+        <div id="menu_btn">
+            <img src="./menu.png" alt="menu" id="menu">
+        </div>
+        <script>
+            var menu_btn=document.getElementById("menu_btn")
+            var side_nav=document.getElementById("side_nav")
+            var menu=document.getElementById("menu")
+            menu_btn.onclick = function(){
+                if (side_nav.style.right == "-200px"){
+                    side_nav.style.right = "0";
+                    menu.src ="./close.png";
+                }
+                else{
+                    side_nav.style.right = "-200px";
+                    menu.src ="./menu.png";
+                }
+            }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 1000,
+                speedAsDuration: true
+            });
+        </script>
+    </section>
+
+
+    <!-- Features -->
+    <section id="feature">
+        <div class="title_text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature_box">
+            <div class="features">
+                <h1>Experienced Staff</h1>
+                <div class="features_description">
+                    <div class="feature_icon">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <div class="feature_text">
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. dignissimos? Quae, veritatis. Consequatur numquam</p>
+                    </div>
+                </div>
+                <h1>Pre Booking Online</h1>
+                <div class="features_description">
+                    <div class="feature_icon">
+                        <i class="fa-regular fa-square-check"></i>
+                    </div>
+                    <div class="feature_text">
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. dignissimos? Quae, veritatis. Consequatur numquam</p>
+                    </div>
+                </div>
+                <h1>Affective Cost</h1>
+                <div class="features_description">
+                    <div class="feature_icon">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <div class="feature_text">
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. dignissimos? Quae, veritatis. Consequatur numquam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features_img">
+                <img src="./barber-man.jpg" alt="barber man">
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES -->
+    <section id="service">
+        <div class="title_text">
+            <p>SERVICES</p>
+            <h1>We Provide Better</h1>
+        </div>
+        <div class="service_box">
+            <div class="single_service">
+                <img src="./pic-1.jpg" alt="image">
+                <div class="overlay"></div>
+                <div class="service_desc">
+                    <h3>Hair styling</h3>
+                    <hr>
+                    <p>This is the under description of barber
+                        foundation this is text under description of 
+                        barbar foundation.
+                    </p>
+                </div>
+            </div>
+            <div class="single_service">
+                <img src="./pic-2.jpg" alt="image">
+                <div class="overlay"></div>
+                <div class="service_desc">
+                    <h3>Hair Cut</h3>
+                    <hr>
+                    <p>This is the under description of barber
+                        foundation this is text under description of 
+                        barbar foundation.
+                    </p>
+                </div>
+            </div>
+            <div class="single_service">
+                <img src="./pic-3.jpg" alt="image">
+                <div class="overlay"></div>
+                <div class="service_desc">
+                    <h3>Bread Trim</h3>
+                    <hr>
+                    <p>This is the under description of barber
+                        foundation this is text under description of 
+                        barbar foundation.
+                    </p>
+                </div>
+            </div>
+            <div class="single_service">
+                <img src="./pic-4.jpg" alt="image">
+                <div class="overlay"></div>
+                <div class="service_desc">
+                    <h3>Hair Plug</h3>
+                    <hr>
+                    <p>This is the under description of barber
+                        foundation this is text under description of 
+                        barbar foundation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial -->
+    <section id="testimonial">
+        <div class="title_text">
+            <p>TESTIMONIAL</p>
+            <h1>What Client Says</h1>
+        </div>
+        <div class="testomonial_row">
+            <div class="testimonial_column">
+                <div class="user">
+                    <img src="./img-1.jpg" alt="image">
+                    <div class="user_info">
+                        <h4>MARKES WING <i class="fa-brands fa-twitter"></i></h4>
+                        <small>@markeswing</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Error minima facilis corporis voluptates sed atque 
+                    deserunt, quis officiis cumque nesciunt mollitia
+                    iste ullam fuga commodi architecto 
+                    dignissimos ipsum adipisci cum.</p>
+            </div>
+            <div class="testimonial_column">
+                <div class="user">
+                    <img src="./img-2.jpg" alt="image">
+                    <div class="user_info">
+                        <h4>LAIRA KAREN <i class="fa-brands fa-twitter"></i></h4>
+                        <small>@lairakaren</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Error minima facilis corporis voluptates sed atque 
+                    cumque nesciunt mollitia
+                    iste ullamhitecto 
+                    dignissimos ipsum adipisci cum.</p>
+            </div>
+            <div class="testimonial_column">
+                <div class="user">
+                    <img src="./img-3.jpg" alt="image">
+                    <div class="user_info">
+                        <h4>JHON SMITH<i class="fa-brands fa-twitter"></i></h4>
+                        <small>@jhonsmith</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Error minima facilis corporis voluptates sed atque 
+                    deserunt, quis officiis cumque nesciunt mollitia
+                    iste ullam fuga commodi architecto 
+                    dignissimos ipsum adipisci cum.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+
+    <section id="footer">
+        <img src="./footer-img.png" alt="image" class="footer_img">
+        <div class="title_text">
+            <p>CONTACT US</p>
+            <h1>Visit Shop Today</h1>
+        </div>
+        <div class="footer_row">
+            <div class="footer_left">
+                <h1>Opening Hours</h1>
+                <p><i class="fa-solid fa-clock"></i>Monday to Friday - 9am to 9pm</p>
+                <p><i class="fa-solid fa-clock"></i>Saturday and Sunday - 8am to 11pm</p>  
+            </div>
+            <div class="footer_right">
+                <h1>Get In Touch</h1>
+                <p><i class="fa-solid fa-location-crosshairs"></i>43/44 mirpur,Dhaka</p>
+                <p><i class="fa-solid fa-paper-plane"></i>contanct@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>01890368620</p>
+            </div>
+        </div>
+        <div class="social_icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <p> @copyright hasanur rahman</p>
+        </div>
+    </section>
+</body>
+</html>
